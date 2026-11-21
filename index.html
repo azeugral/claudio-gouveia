@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cláudio Gouveia · Realismo a preto e cinza no Algarve</title>
+<meta name="description" content="Cláudio Gouveia, tatuador de realismo a preto e cinza em Loulé, Algarve. Retratos, fé, animais e caveiras. Estúdio privado, só por marcação.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e0d0c">
+<meta property="og:title" content="Cláudio Gouveia · Tattoo Realism">
+<meta property="og:description" content="Realismo a preto e cinza no Algarve, desde 2016.">
+<meta property="og:image" content="https://azeugral.github.io/claudio-gouveia/img/og.jpg">
+<meta property="og:url" content="https://azeugral.github.io/claudio-gouveia/">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/pirata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/h/cillian.webp" as="image">
+<style>
+@font-face{font-family:Pirata;src:url(fonts/pirata.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Hanken;src:url(fonts/hanken.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#0e0d0c;--bg2:#161412;--osso:#ece6da;--ouro:#c6a052;--ouro2:#e0c27e;--cinza:#9a948b;--linha:rgba(236,230,218,.14);--ease:cubic-bezier(.16,.84,.32,1);--g:clamp(16px,4vw,56px)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--osso);font:400 17px/1.65 Hanken,system-ui,sans-serif;overflow-x:hidden}
+img,video{display:block;max-width:100%;height:auto;-webkit-user-drag:none}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:400}
+h2{font:400 clamp(40px,6.4vw,76px)/1 Pirata,serif;color:var(--osso);text-align:center;text-wrap:balance;letter-spacing:.01em}
+.chapeu{margin:0 0 14px;font:600 13px/1 Hanken,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);text-align:center}
+.sub{max-width:620px;margin:18px auto 0;text-align:center;color:var(--cinza);text-wrap:balance}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.bt{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;font:600 15px/1 Hanken,sans-serif;letter-spacing:.06em;text-decoration:none;border:1px solid var(--ouro);cursor:pointer;transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease)}
+.bt:active{transform:translateY(1px)}
+.bt-ouro{background:var(--ouro);color:#14110c}.bt-ouro:hover{background:var(--ouro2)}
+.bt-linha{background:transparent;color:var(--osso)}.bt-linha:hover{background:rgba(198,160,82,.12)}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding:18px var(--g);transition:background .3s var(--ease),padding .3s var(--ease)}
+.topo.solido{background:rgba(14,13,12,.94);padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--linha)}
+.menu{display:flex;gap:28px;font:600 13px/1 Hanken,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.menu-d{justify-content:flex-end}
+.menu a{text-decoration:none;color:var(--osso);opacity:.85;transition:opacity .3s var(--ease),color .3s var(--ease)}
+.menu a:hover{opacity:1;color:var(--ouro2)}
+.marca{font:400 26px/1 Pirata,serif;text-decoration:none;color:var(--osso);white-space:nowrap}
+.marca b{font-weight:400;color:var(--ouro)}
+.burger{display:none;justify-self:end;width:44px;height:44px;background:none;border:1px solid var(--linha);cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:2px;background:var(--osso)}
+.burger span:first-child{top:16px}.burger span:last-child{top:25px}
+.gaveta{position:fixed;inset:0;z-index:45;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;font:400 34px/1 Pirata,serif}
+.gaveta a{text-decoration:none}
+.gaveta .bt{font:600 15px/1 Hanken,sans-serif;margin-top:10px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:86px var(--g) 28px;overflow:hidden;background:radial-gradient(ellipse 60% 55% at 50% 42%,#1d1a17 0%,var(--bg) 70%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:120px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
+.orn{position:absolute;z-index:0;pointer-events:none;opacity:.08;height:auto}
+.hero .orn{top:50%;width:min(24vw,360px);transform:translateY(-50%);-webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent);mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent)}
+.hero .orn-e{left:calc(var(--g) - 2vw)}.hero .orn-d{right:calc(var(--g) - 2vw)}
+.palco{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;align-items:center;height:var(--ah,70svh)}
+.quadro{position:relative;margin:0;height:calc(var(--ah,70svh)*.84);aspect-ratio:4/5;z-index:1}
+.quadro::before{content:"";position:absolute;inset:-12px;border:1px solid var(--ouro);pointer-events:none}
+.quadro::after{content:"";position:absolute;inset:-6px;border:1px solid rgba(198,160,82,.45);pointer-events:none}
+.q-janela{position:absolute;inset:0;overflow:hidden;background:#000}
+.q-janela img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform,opacity}
+.q-zoom{position:absolute;left:12px;top:12px;z-index:2;display:flex;gap:8px;align-items:baseline;padding:7px 10px;background:rgba(14,13,12,.82);font:600 11px/1 Hanken,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cinza)}
+.q-zoom b{font:600 14px/1 Hanken,sans-serif;letter-spacing:.02em;color:var(--ouro2);min-width:3.1em;font-variant-numeric:tabular-nums}
+.nome{position:relative;z-index:3;margin-top:calc(var(--fs,160px)*-.5);display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.pre{font:600 clamp(12px,1.2vw,15px)/1 Hanken,sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;padding:6px 10px 6px 16px;background:var(--bg)}
+.grande{font:400 var(--fs,160px)/.86 Pirata,serif;color:var(--osso);white-space:nowrap;text-shadow:0 3px 0 var(--bg),0 -3px 0 var(--bg),3px 0 0 var(--bg),-3px 0 0 var(--bg),0 10px 30px rgba(0,0,0,.6)}
+.eti{position:absolute;top:46%;z-index:2;margin:0;font:600 12px/1.7 Hanken,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza);transform:translateY(-50%)}
+.eti::before{content:"";display:block;width:30px;height:1px;background:var(--ouro);margin-bottom:12px}
+.e1{left:calc(var(--g) + 4vw)}.e2{right:calc(var(--g) + 4vw);text-align:right}.e2::before{margin-left:auto}
+.hero-base{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:10px;text-align:center}
+.frase{margin:0;color:var(--cinza);font-size:17px}
+.bts{display:flex;gap:14px;justify-content:center}
+.peca{font:600 12px/1 Hanken,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--cinza);transition:opacity .3s var(--ease)}
+.peca b{color:var(--ouro);font-weight:600;margin-right:10px}
+.hero .ent{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.pronto .ent{opacity:1;transform:none}
+.pronto .eti.ent{transform:translateY(-50%)}
+.eti.ent{transform:translateY(calc(-50% + 14px))}
+
+/* fundo contínuo */
+.fundo{position:relative;isolation:isolate;background:var(--bg)}
+.fundo::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url(img/mar-c.webp) top center/1500px auto repeat;opacity:.1;-webkit-mask-image:linear-gradient(transparent,#000 320px);mask-image:linear-gradient(transparent,#000 320px)}
+section{position:relative;overflow:hidden}
+.sec{padding:clamp(80px,11vw,140px) var(--g)}
+.sec>*:not(.orn){position:relative;z-index:1}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rev.vis{opacity:1;transform:none}
+
+/* temas */
+.temas{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1180px;margin:52px auto 0}
+.tema{position:relative;display:block;padding:0;border:0;background:none;color:inherit;text-align:center;cursor:pointer;font:inherit}
+.tema figure{margin:0;padding:8px;border:1px solid var(--linha);transition:border-color .3s var(--ease)}
+.tema img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .3s var(--ease),transform .3s var(--ease)}
+.tema h3{margin-top:16px;font:400 32px/1 Pirata,serif}
+.tema p{margin:6px 0 0;color:var(--cinza);font-size:15px}
+.tema:hover figure{border-color:var(--ouro)}.tema:hover img{filter:grayscale(.3)}
+.temas-orn{left:50%;top:50%;width:min(56vw,640px);transform:translate(-50%,-50%);-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent);mask-image:radial-gradient(closest-side,#000 55%,transparent)}
+
+/* portfólio */
+.filtros{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px auto 34px;max-width:980px}
+.filtros button{min-height:42px;padding:0 16px;background:transparent;border:1px solid var(--linha);color:var(--osso);font:600 13px/1 Hanken,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:border-color .3s var(--ease),background .3s var(--ease),color .3s var(--ease)}
+.filtros button:hover{border-color:var(--ouro)}
+.filtros button[aria-pressed=true]{background:var(--ouro);border-color:var(--ouro);color:#14110c}
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1280px;margin:0 auto}
+.obra{margin:0;padding:7px;border:1px solid var(--linha);background:rgba(14,13,12,.6);cursor:zoom-in;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.obra:hover{border-color:var(--ouro);transform:translateY(-3px)}
+.obra img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.obra figcaption{padding:10px 2px 3px;font-size:14px;color:var(--cinza);text-align:center;line-height:1.35}
+.mais{display:flex;justify-content:center;margin-top:40px}
+.lb{position:fixed;inset:0;z-index:80;background:rgba(8,7,6,.96);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:60px var(--g) 24px}
+.lb img{max-height:calc(100svh - 190px);width:auto;max-width:100%;border:1px solid var(--linha);padding:6px}
+.lb p{margin:0;color:var(--cinza);text-align:center}
+.lb-x{position:absolute;top:14px;right:var(--g);width:46px;height:46px;background:none;border:1px solid var(--linha);color:var(--osso);font-size:24px;cursor:pointer}
+.lb-nav{position:absolute;top:50%;width:50px;height:50px;background:rgba(14,13,12,.7);border:1px solid var(--linha);color:var(--osso);font-size:22px;cursor:pointer;transform:translateY(-50%)}
+.lb-a{left:var(--g)}.lb-b{right:var(--g)}
+
+/* provas */
+.provas{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1240px;margin:52px auto 0}
+.prova{margin:0;text-align:center}
+.prova .moldura{padding:8px;border:1px solid var(--linha)}
+.prova img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.prova h3{margin-top:18px;font:400 28px/1.05 Pirata,serif;color:var(--osso)}
+.prova p{margin:8px auto 0;max-width:260px;font-size:15px;color:var(--cinza)}
+
+/* convenções */
+.conv{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:900px;margin:52px auto 0}
+.conv figure{margin:0;padding:8px;border:1px solid var(--linha)}
+.conv img{width:100%;aspect-ratio:1;object-fit:cover}
+.conv figcaption{padding:12px 4px 4px;text-align:center;color:var(--cinza);font-size:15px}
+.lista{list-style:none;margin:40px auto 0;padding:0;max-width:760px;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+.lista li{display:flex;justify-content:space-between;gap:16px;padding:16px 2px;border-bottom:1px solid var(--linha)}
+.lista b{font-weight:600}.lista span{color:var(--cinza);text-align:right}
+
+/* sobre */
+.sobre{display:grid;grid-template-columns:minmax(0,440px) minmax(0,520px);gap:clamp(30px,6vw,80px);justify-content:center;align-items:center;max-width:1100px;margin:0 auto}
+.sobre figure{margin:0;padding:8px;border:1px solid var(--linha)}
+.sobre img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sobre figcaption{padding:10px 2px 2px;text-align:center;color:var(--cinza);font-size:14px}
+.sobre .txt h2,.sobre .txt .chapeu{text-align:left}
+.sobre .txt p{color:#cfc8bb}
+.lema{margin:26px 0 0;padding:18px 0 0;border-top:1px solid var(--linha);font:400 30px/1.15 Pirata,serif;color:var(--ouro2)}
+.lema small{display:block;margin-top:8px;font:600 12px/1 Hanken,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--cinza)}
+
+/* estúdio */
+.est{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;max-width:1180px;margin:52px auto 0;align-items:stretch}
+.est figure{margin:0;padding:8px;border:1px solid var(--linha)}
+.est img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.est .info{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;padding:28px 22px;border:1px solid var(--linha)}
+.est .info img{width:min(220px,70%);height:auto;aspect-ratio:auto}
+.est .info h3{font:400 30px/1 Pirata,serif}
+.est .info p{margin:0;color:var(--cinza)}
+.est iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+.est .mapa{display:flex;padding:8px;border:1px solid var(--linha)}
+.est .mapa iframe{display:block;flex:1}
+
+/* marcar */
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1100px;margin:52px auto 0;list-style:none;padding:0;counter-reset:p}
+.passos li{padding:24px 20px;border:1px solid var(--linha);text-align:center;background:rgba(14,13,12,.55)}
+.passos b{display:block;font:400 26px/1.1 Pirata,serif;color:var(--osso);margin-bottom:8px}
+.passos span{color:var(--cinza);font-size:15px}
+.form{max-width:760px;margin:48px auto 0;padding:clamp(22px,4vw,40px);border:1px solid var(--linha);background:rgba(14,13,12,.75)}
+.campo{margin:0 0 22px;border:0;padding:0}
+.campo>label,.campo legend{display:block;margin-bottom:10px;font:600 13px/1 Hanken,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro)}
+input[type=text],select,textarea{width:100%;min-height:50px;padding:12px 14px;background:#0a0908;border:1px solid var(--linha);color:var(--osso);font:400 16px/1.4 Hanken,sans-serif;border-radius:0;transition:border-color .3s var(--ease)}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ouro)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0}
+.chips span{display:inline-flex;align-items:center;min-height:42px;padding:0 15px;border:1px solid var(--linha);font-size:15px;cursor:pointer;transition:border-color .3s var(--ease),background .3s var(--ease),color .3s var(--ease)}
+.chips input:checked+span{background:var(--ouro);border-color:var(--ouro);color:#14110c}
+.chips input:focus-visible+span{outline:2px solid var(--ouro2);outline-offset:2px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.erro{margin:8px 0 0;color:#e08a7a;font-size:14px}
+.envio{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.aviso{margin:14px 0 0;text-align:center;color:var(--ouro2);font-size:15px}
+.nota{margin:14px 0 0;text-align:center;color:var(--cinza);font-size:14px}
+
+footer{padding:48px var(--g) 40px;text-align:center;color:var(--cinza);font-size:14px}
+footer .marca{display:inline-block;font-size:34px;margin-bottom:10px}
+footer p{margin:6px 0}
+footer a{color:var(--osso)}
+
+@media (max-width:1100px){.eti{display:none}.menu{gap:18px}}
+@media (max-width:900px){
+  .menu{display:none}.burger{display:block}.topo{grid-template-columns:1fr auto}.marca{font-size:24px}
+  .temas,.provas,.passos{grid-template-columns:1fr 1fr;gap:14px}
+  .grade{grid-template-columns:1fr 1fr;gap:10px}
+  .est{grid-template-columns:1fr 1fr}.est .mapa{grid-column:1/-1}.est iframe{min-height:280px}
+  .sobre{grid-template-columns:1fr;justify-items:center;text-align:center}.sobre figure{max-width:440px}
+  .sobre .txt h2,.sobre .txt .chapeu{text-align:center}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero{padding-top:78px}
+  .hero .orn{width:42vw;opacity:.06}.hero .orn-e{left:-14vw}.hero .orn-d{right:-14vw}
+  .palco{height:auto}.quadro{height:auto;width:min(76vw,calc(var(--ah,70svh)*.66))}
+  .bts{flex-direction:column;width:100%}.bts .bt{width:100%}
+  .tema h3{font-size:26px}.tema p{font-size:13px}.tema figure{padding:5px}
+  .obra{padding:5px}.obra figcaption{font-size:12.5px;padding-top:8px}
+  .prova h3{font-size:23px}.prova p{font-size:13.5px}.prova .moldura{padding:5px}
+  .conv{gap:12px}.conv figure{padding:5px}.conv figcaption{font-size:13px}
+  .lista{grid-template-columns:1fr}
+  .passos li{padding:18px 12px}.passos b{font-size:22px}.passos span{font-size:13.5px}
+  .duas,.envio{grid-template-columns:1fr}
+  .est{grid-template-columns:1fr}.est .info{order:-1}
+  .lb-nav{top:auto;bottom:18px;transform:none}
+  .fundo::before{background-size:900px auto}
+}
+@media (max-height:560px) and (orientation:landscape){.frase,.peca{display:none}.hero{padding-top:66px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rev,.hero .ent{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="topo" id="topo">
+  <nav class="menu menu-e" aria-label="Secções"><a href="#trabalhos">Trabalhos</a><a href="#provas">Provas</a><a href="#convencoes">Convenções</a></nav>
+  <a class="marca" href="#inicio">Cláudio <b>Gouveia</b></a>
+  <nav class="menu menu-d" aria-label="Mais"><a href="#sobre">Sobre</a><a href="#estudio">Estúdio</a><a href="#marcar">Marcar</a></nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="gaveta" id="gaveta" hidden>
+  <a href="#trabalhos">Trabalhos</a><a href="#provas">Provas</a><a href="#convencoes">Convenções</a><a href="#sobre">Sobre</a><a href="#estudio">Estúdio</a>
+  <a class="bt bt-ouro" href="#marcar">Pedir orçamento</a>
+</div>
+
+<section class="hero" id="inicio">
+  <img class="orn orn-e" src="img/orn/cruz.webp" alt="" aria-hidden="true">
+  <img class="orn orn-d" src="img/orn/cruz.webp" alt="" aria-hidden="true">
+  <p class="eti e1 ent">Realismo<br>preto e cinza</p>
+  <p class="eti e2 ent">Loulé<br>Algarve · PT</p>
+  <div class="palco" id="palco">
+    <figure class="quadro ent" aria-label="Retratos tatuados por Cláudio Gouveia">
+      <div class="q-janela" id="qJanela"><img src="img/h/cillian.webp" alt="Retrato de Cillian Murphy em Peaky Blinders, tatuagem realista" width="1200" height="1500" fetchpriority="high"></div>
+      <figcaption class="q-zoom"><span>Detalhe</span><b id="qZoom">×1,0</b></figcaption>
+    </figure>
+    <div class="nome ent" aria-hidden="true"><span class="pre">Cláudio</span><span class="grande" id="grande">Gouveia</span></div>
+  </div>
+  <h1 class="sr">Cláudio Gouveia, tatuador de realismo a preto e cinza em Loulé, Algarve</h1>
+  <div class="hero-base ent">
+    <p class="frase">Realismo a preto e cinza, desde 2016.</p>
+    <div class="bts"><a class="bt bt-ouro" href="#marcar">Pedir orçamento</a><a class="bt bt-linha" href="#trabalhos">Ver trabalhos</a></div>
+    <p class="peca" id="peca"><b>Nº 1</b><span>Cillian Murphy · antebraço</span></p>
+  </div>
+</section>
+
+<main class="fundo">
+<section class="sec" id="estilos">
+  <img class="orn temas-orn" src="img/orn/cruz.webp" alt="" aria-hidden="true">
+  <div class="rev"><p class="chapeu">Tattoo Realism</p><h2>O que ele tatua</h2>
+  <p class="sub">Tudo a preto e cinza, do retrato de quem se ama ao cão da família. Escolha um tema para ver só essas peças.</p></div>
+  <div class="temas rev">
+    <button class="tema" data-f="retratos"><figure><img src="img/p/01.webp" alt="Retrato realista de Cillian Murphy" width="720" height="900"></figure><h3>Retratos</h3><p>Rostos, homenagens e ícones</p></button>
+    <button class="tema" data-f="fe"><figure><img src="img/p/02.webp" alt="Virgem com terço em realismo" width="720" height="900"></figure><h3>Fé</h3><p>Virgem, Cristo, cruzes e terços</p></button>
+    <button class="tema" data-f="animais"><figure><img src="img/p/15.webp" alt="Buldogue francês em realismo" width="720" height="900"></figure><h3>Animais</h3><p>Os de casa e os selvagens</p></button>
+    <button class="tema" data-f="caveiras"><figure><img src="img/p/09.webp" alt="Caveira com rosa em realismo" width="720" height="900"></figure><h3>Caveiras</h3><p>Caveiras, águias e sombras</p></button>
+  </div>
+</section>
+
+<section class="sec" id="trabalhos">
+  <div class="rev"><p class="chapeu">Portfólio</p><h2>Trabalhos</h2></div>
+  <div class="filtros" id="filtros" role="group" aria-label="Filtrar por tema">
+    <button data-f="todos" aria-pressed="true">Todos</button><button data-f="retratos" aria-pressed="false">Retratos</button><button data-f="fe" aria-pressed="false">Fé</button><button data-f="animais" aria-pressed="false">Animais</button><button data-f="caveiras" aria-pressed="false">Caveiras</button><button data-f="rosas" aria-pressed="false">Rosas e outros</button><button data-f="fechados" aria-pressed="false">Braços fechados</button>
+  </div>
+  <div class="grade" id="grade"></div>
+  <div class="mais"><button class="bt bt-linha" id="verMais">Ver mais trabalhos</button></div>
+</section>
+
+<section class="sec" id="provas">
+  <img class="orn" src="img/orn/cruz.webp" alt="" aria-hidden="true" style="left:-120px;top:120px;width:300px;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent);mask-image:linear-gradient(90deg,#000 40%,transparent)">
+  <img class="orn" src="img/orn/cruz.webp" alt="" aria-hidden="true" style="right:-120px;top:120px;width:300px;transform:scaleX(-1);-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent);mask-image:linear-gradient(90deg,#000 40%,transparent)">
+  <div class="rev"><p class="chapeu">Provas do realismo</p><h2>Igual ao original</h2>
+  <p class="sub">O realismo vê-se ao lado do modelo, depois de cicatrizar e num braço inteiro.</p></div>
+  <div class="provas rev">
+    <figure class="prova"><div class="moldura"><img src="img/p/03g.webp" alt="Buldogue francês tatuado na perna com o próprio cão ao lado" width="1440" height="1800"></div><h3>Ao lado do modelo</h3><p>O buldogue tatuado e o próprio cão, lado a lado.</p></figure>
+    <figure class="prova"><div class="moldura"><img src="img/p/10g.webp" alt="Cristo com coroa de espinhos cicatrizado" width="1440" height="1800"></div><h3>Cicatrizada</h3><p>Cristo com coroa de espinhos, já cicatrizado.</p></figure>
+    <figure class="prova"><div class="moldura"><img src="img/p/43g.webp" alt="Braço fechado em realismo feito em três dias" width="1440" height="1800"></div><h3>Braço em 3 dias</h3><p>Um braço inteiro fechado em três dias.</p></figure>
+    <figure class="prova"><div class="moldura"><img src="img/p_highlights.webp" alt="Índia com flor de lótus com realces novos sobre tatuagem cicatrizada" width="960" height="1200"></div><h3>Realces</h3><p>Realces novos sobre uma índia já cicatrizada.</p></figure>
+  </div>
+</section>
+
+<section class="sec" id="convencoes">
+  <div class="rev"><p class="chapeu">Na estrada</p><h2>Convenções</h2>
+  <p class="sub">Artista da Odin Tattoo Equipments, levou o realismo às convenções do Porto e de Faro.</p></div>
+  <div class="conv rev">
+    <figure><img src="img/oporto.webp" alt="Cartaz da Oporto Tattoo 2018 com Cláudio Gouveia, Bline Tattoo, Loulé" width="1000" height="1000"><figcaption>Oporto Tattoo 2018</figcaption></figure>
+    <figure><img src="img/hellgarve.webp" alt="Cartaz da HellGarve Tattoo Rock Fest 2019 com Cláudio Gouveia, Odin Tattoo" width="1000" height="1000"><figcaption>HellGarve Tattoo Rock Fest 2019</figcaption></figure>
+  </div>
+  <ul class="lista rev">
+    <li><b>Oporto Tattoo</b><span>Porto · 2018</span></li>
+    <li><b>Oporto Tattoo</b><span>Porto · 2019</span></li>
+    <li><b>HellGarve Tattoo Rock Fest</b><span>Faro · 2019</span></li>
+    <li><b>Odin Tattoo Equipments</b><span>Artista da marca</span></li>
+  </ul>
+</section>
+
+<section class="sec" id="sobre">
+  <div class="sobre">
+    <figure class="rev"><img src="img/sobre.webp" alt="Cláudio Gouveia a tatuar um braço" width="960" height="1200"><figcaption>Cláudio Gouveia a trabalhar</figcaption></figure>
+    <div class="txt rev">
+      <p class="chapeu">O artista</p><h2>Cláudio Gouveia</h2>
+      <p>Tatuador de realismo a preto e cinza no Algarve desde 2016. Retratos, imagens de fé, animais e caveiras, sempre em cinzentos.</p>
+      <p>Em Loulé esteve à frente da Bline Tattoo, levou o trabalho à Oporto Tattoo e à HellGarve Tattoo Rock Fest e é artista da Odin Tattoo Equipments. Hoje atende em estúdio privado, só com marcação.</p>
+      <p class="lema">“Mais do que uma loja, somos uma família.”<small>Lema da Bline Tattoo</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="estudio">
+  <div class="rev"><p class="chapeu">Estúdio privado</p><h2>Loulé, Algarve</h2>
+  <p class="sub">Atendimento só com marcação, num espaço privado e sem pressa.</p></div>
+  <div class="est rev">
+    <div class="info"><img src="img/bline.webp" alt="Logótipo da Bline Tattoo" width="427" height="600"><h3>Bline Tattoo</h3><p>Loulé · Algarve</p><a class="bt bt-linha" href="#marcar">Marcar</a></div>
+    <figure><img src="img/estudio.webp" alt="Interior da Bline Tattoo em Loulé" width="960" height="1200"></figure>
+    <div class="mapa"><iframe title="Mapa de Loulé" src="https://www.google.com/maps?q=Rua+da+Barbac%C3%A3,+Loul%C3%A9&output=embed" allowfullscreen></iframe></div>
+  </div>
+</section>
+
+<section class="sec" id="marcar">
+  <img class="orn" src="img/orn/cruz.webp" alt="" aria-hidden="true" style="left:50%;top:60px;width:min(70vw,520px);transform:translateX(-50%);-webkit-mask-image:linear-gradient(transparent,#000 20%,#000 50%,transparent);mask-image:linear-gradient(transparent,#000 20%,#000 50%,transparent)">
+  <div class="rev"><p class="chapeu">Orçamento e marcação</p><h2>Pedir orçamento</h2>
+  <p class="sub">Preencha em um minuto. O pedido segue pronto por e-mail ou por Direct.</p></div>
+  <ol class="passos rev">
+    <li><b>A ideia</b><span>Conte o tema, o local e o tamanho.</span></li>
+    <li><b>A referência</b><span>Para retrato, uma foto nítida e com boa luz.</span></li>
+    <li><b>O orçamento</b><span>Valor e número de sessões.</span></li>
+    <li><b>A sessão</b><span>Data marcada no estúdio privado.</span></li>
+  </ol>
+  <form class="form rev" id="form" novalidate>
+    <div class="campo"><label for="fNome">Nome</label><input type="text" id="fNome" autocomplete="name"><p class="erro" id="eNome" hidden>Escreva o seu nome.</p></div>
+    <fieldset class="campo"><legend>Tema</legend><div class="chips">
+      <label><input type="radio" name="tema" value="Retrato" checked><span>Retrato</span></label>
+      <label><input type="radio" name="tema" value="Fé"><span>Fé</span></label>
+      <label><input type="radio" name="tema" value="Animal"><span>Animal</span></label>
+      <label><input type="radio" name="tema" value="Caveira"><span>Caveira</span></label>
+      <label><input type="radio" name="tema" value="Rosas e ornamentos"><span>Rosas e ornamentos</span></label>
+      <label><input type="radio" name="tema" value="Braço fechado"><span>Braço fechado</span></label>
+      <label><input type="radio" name="tema" value="Ainda não sei"><span>Ainda não sei</span></label>
+    </div></fieldset>
+    <fieldset class="campo"><legend>É cobertura?</legend><div class="chips">
+      <label><input type="radio" name="cob" value="Não" checked><span>Não</span></label>
+      <label><input type="radio" name="cob" value="Sim"><span>Sim</span></label>
+    </div></fieldset>
+    <div class="duas">
+      <div class="campo"><label for="fLocal">Local do corpo</label><input type="text" id="fLocal" placeholder="Ex.: antebraço"></div>
+      <div class="campo"><label for="fTam">Tamanho</label><select id="fTam"><option>Até 10 cm</option><option selected>Médio, 10 a 20 cm</option><option>Grande, mais de 20 cm</option><option>Braço ou perna fechada</option></select></div>
+    </div>
+    <div class="campo"><label for="fIdeia">Conte a sua ideia</label><textarea id="fIdeia" placeholder="Quem ou o quê, estilo da foto, detalhes que não podem faltar"></textarea></div>
+    <div class="campo"><label for="fDisp">Disponibilidade</label><select id="fDisp"><option>Durante a semana</option><option>Fim de semana</option><option selected>Qualquer dia</option></select></div>
+    <div class="envio"><button class="bt bt-ouro" type="submit" data-via="mail">Enviar por e-mail</button><button class="bt bt-linha" type="submit" data-via="dm">Enviar por Direct</button></div>
+    <p class="aviso" id="aviso" hidden>Mensagem copiada. No Direct, é só colar e enviar.</p>
+    <p class="nota">As fotos de referência seguem como resposta ao e-mail ou no Direct.</p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <a class="marca" href="#inicio">Cláudio <b>Gouveia</b></a>
+  <p>Realismo a preto e cinza · Loulé, Algarve</p>
+  <p><a href="mailto:Blineloule@hotmail.com">Blineloule@hotmail.com</a> · <a href="https://www.instagram.com/claudio_artisttattoo/" target="_blank" rel="noopener">@claudio_artisttattoo</a></p>
+  <p>Site por <a href="https://lrgz.com.br">L R G Z</a></p>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Trabalho ampliado">
+  <button class="lb-x" id="lbX" aria-label="Fechar">×</button>
+  <button class="lb-nav lb-a" id="lbA" aria-label="Anterior">‹</button>
+  <img id="lbImg" alt="">
+  <p id="lbTit"></p>
+  <button class="bt bt-ouro" id="lbQuero">Quero uma assim</button>
+  <button class="lb-nav lb-b" id="lbB" aria-label="Seguinte">›</button>
+</div>
+<script src="js/obras.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
